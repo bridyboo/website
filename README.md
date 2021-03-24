@@ -1,1 +1,1 @@
-it's a readme
+My simple online portfolio, it does its job. It was built on Jekyll based on ... theme.
