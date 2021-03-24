@@ -1,8 +1,8 @@
 # Site settings
 title: Matthew's Portfolio
 description: Tech enthusiast, Anime fan, Matthew Darmadi
-baseurl: "/website" 
-url: "http://www.bridyboo.com/" 
+baseurl: "" 
+url: "http://www.bridyboo.com/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Matthew Brian Darmadi
