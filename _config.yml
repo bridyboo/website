@@ -1,13 +1,8 @@
 # Site settings
 title: Matthew's Portfolio
 description: Tech enthusiast, Anime fan, Matthew Darmadi
-<<<<<<< HEAD
 baseurl: "" 
-url: "http://www.bridyboo.com/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
-=======
-baseurl: "/website" 
-url: "http://www.bridyboo.com" 
->>>>>>> 2f8e0f5f070cd0548cb32f41672753ce52f57a17
+url: "http://www.bridyboo.com/" 
 
 # User settings
 username: Matthew Brian Darmadi
@@ -16,4 +11,3 @@ user_title: Software Developer
 email: matthewdarmadi@gmail.com
 
 exclude: ['package.json', 'src' , 'node_modules']
-
