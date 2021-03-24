@@ -1,16 +1,13 @@
 # Site settings
 title: Matthew's Portfolio
-description: Software Developer, Anime nerd, Average man, but still Matthew
-# baseurl: "" # the subpath of your site, e.g. /blog
+description: Tech enthusiast, Anime fan, Matthew Darmadi
+baseurl: "/website" 
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Matthew Brian Darmadi
 user_description: I'm a Software Developer graduate from Seattle University winter 2020, currently looking for work opportunity and a sponsor. I have one year of industry experience, and specializes in python, C++/C#.
 email: matthewdarmadi@gmail.com
-# twitter_username: lorem_ipsum
-# github_username:  lorem_ipsum
-# gplus_username:  lorem_ipsum
 
 exclude: ['package.json', 'src' , 'node_modules']
 
