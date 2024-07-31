@@ -18,9 +18,10 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: us-west-2 # Change to your AWS region
+        aws-region: us-east-1 # Change to your AWS region
 
-    - name: Push to AWS CodeCommit
-      run: |
-        git remote add codecommit ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/YourRepositoryName
-        git push codecommit main
+    - name: sync up to code-commit
+      uses: bridyboo/website@main
+      with:
+        repository_name: personalwebsite
+        aws_region: us-east-1
