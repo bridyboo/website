@@ -1,10 +1,36 @@
 <div class="user-details">
-  <h1>My Resume</h1>
-  <p>I'm a Computer Science graduate from Seattle University, currently looking for a work opportunity.<br> I have 3 years of industry experience and specializes in Python, C++, C#, and Java.</p>
-  <br>
-  <div id ="resumePage">
-    <iframe src="assets\resume.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0" width="100%" height="900px"></iframe>
-    </iframe>
+  <h1 id="toggleView" onclick="toggleView()">My Portfolio | My Projects</h1>
+  <p>I'm a Computer Science graduate from Seattle University, currently looking for a work opportunity.<br>
+    I have 3 years of industry experience and specialize in Python, C++, C#, and Java.
+  </p>
+
+  <!-- Content container -->
+  <div id="content">
+    <!-- Resume View (Default) -->
+    <div id="resumePage">
+      <iframe src="assets/resume.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="900px"></iframe>
+    </div>
+
+    <!-- Projects View (Initially Hidden) -->
+    <div id="projectsPage" style="display: none;">
+      <h2>My Projects</h2>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=cxF8Om-dsGQ&ab_channel=Bridyboo%3A3" target="_blank">Project 1: AI Fighting Game Bot</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vLVMcHfOAlI&ab_channel=Bridyboo%3A3" target="_blank">Project 2: Twitch Streamer Bot</a></li>
+      </ul>
+    </div>
   </div>
 </div>
 
+<script>
+  let isShowingResume = true;
+
+  function toggleView() {
+    isShowingResume = !isShowingResume;
+    
+    document.getElementById('resumePage').style.display = isShowingResume ? 'block' : 'none';
+    document.getElementById('projectsPage').style.display = isShowingResume ? 'none' : 'block';
+    
+    document.getElementById('toggleView').innerHTML = isShowingResume ? "My Portfolio | My Projects" : "My Projects | My Portfolio";
+  }
+</script>
